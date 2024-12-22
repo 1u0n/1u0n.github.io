@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Testing</title>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAApJJREFUOI2tlU1IVFEUx3/3vXFMU1OpFhG0MJKg6HMnLaYGrSBt1caoFkKLSrIZtQ+tSY2aZlTIWgQuInDTpk8iddKF1EoisEVJgotoUWGmozKj750W783M82NUqLM693/P+XHP/ThXsZwN3C4g5moAdcYS5BGZcy0cuPI7XYpaUg0ENEpyT6IkBGxcMDsGNKFHH+AJzK0MjIS8KNWOsGMBBKDQkfkJkRq8tZGlgf1tWzEkDFLhmB9GpI53Uy8BKFl7DKXuAtsciOfoyo/n0lcL2B9wYeTcBPyA244aB9VMfk4H+8/Ozqtg8GEG49ELII1Avq3GgTB69IYiEr4FXLUnDJBO4pmNHK3+CcDrexvImD2CJkLM/Wae7o41g6oCdABEbiki4VFgiwVTx/H6XgHwvi2LGaMaUQ1Ajl3eNNCBvqYFz7koAH2t5ZjyFNCAUQ3Is+ndSVhv+3amzSFE3UnBACQbpB5j5iN9wWIADvpegPTYAXlaKlgbTu2z0QUUkd6KMPWu1FB9SVJSmmkC0B/cDOxZBpawffQEN1m5mIuBCZtz564CZpnoeQulxcB/tMVAV3xy1dnKmEgPFM3yPfXfQH1YmSaDlNZ/t9wUx3EoUpz0DakERpahjYBW6Rgnn6IGJJZdRl9rueX5P5Ot7UTJZcCxBWoaVBA9azden3XNekMVQJkdMKHoDbWg1DVbMIFO4u6G5BPrD6/HUIdBBJ1uPP5fgP304i1AVapSaU7XHP6AamJs8j4nAvF5xT4JuCnMPQ9yHVhnqzFEwrimAv+hffEMZfo5VDcCq2+wiZZf4NCGMFUNpb63zvTF99BbG2EgugtRp4EfDlACNgZcRI/uXQhbeoVOS31SpyxBHq/0Sf0FZ47uJCcuESoAAAAASUVORK5CYII=" />
+</head>
+<body style="width:100%;height:100%;margin:0;background-color:#333;color:#ccc">
+  <script>
+    const origin = atob('aHR0cHM6Ly9teS10ZXN0LnRydWVzaWduLmFp');
+    fetch(origin + '/cookie/test', {credentials:"include"})
+      .then(resp => alert(resp.status));
+  </script>
+</body>
+</html>
