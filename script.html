@@ -23,12 +23,12 @@
     .then(() => {
       loadTime = performance.now() - loadTime;
       fetchTime = performance.now();
-      return window.truesignGetToken(436885871);
+      return window.truesignGetToken(1266238238);
     })
     .then(endpointResult => {
       console.log(endpointResult);
       window.obj = endpointResult;
-      output.textContent = JSON.stringify(endpointResult) + ' LoadLag:' + loadTime + ' FetchLag:' + (performance.now() - fetchTime);
+      output.textContent = ' LoadLag:' + loadTime + ' FetchLag:' + (performance.now() - fetchTime);
     });
     
   </script>
