@@ -28,7 +28,7 @@
     .then(endpointResult => {
       console.log(endpointResult);
       window.obj = endpointResult;
-      output.innerHTML = `<span>LoadLag:${loadTime} FetchLag:${performance.now() - fetchTime}</span>`;
+      output.innerHTML = `<span id="result">LoadLag:${loadTime} FetchLag:${performance.now() - fetchTime}</span>`;
     });
     
   </script>
